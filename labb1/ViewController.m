@@ -9,10 +9,19 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UISwitch *mySwitch;
+@property (weak, nonatomic) IBOutlet UILabel *rubrik;
 
 @end
 
 @implementation ViewController
+- (IBAction)toggleSwitch:(id)sender {
+    if (self.mySwitch.isOn) {
+        self.rubrik.textColor = [UIColor colorWithWhite:0 alpha:1];
+    } else {
+        self.rubrik.textColor = [UIColor colorWithWhite:1 alpha:1];
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
