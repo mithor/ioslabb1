@@ -380,7 +380,7 @@
         <!--En bild-->
         <scene sceneID="Ydo-jK-iUN">
             <objects>
-                <viewController title="En bild" id="Kyi-AW-biD" sceneMemberID="viewController">
+                <viewController title="En bild" id="Kyi-AW-biD" customClass="BildViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iuo-gv-vAw"/>
                         <viewControllerLayoutGuide type="bottom" id="4oQ-em-5tq"/>
@@ -392,10 +392,26 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jag" translatesAutoresizingMaskIntoConstraints="NO" id="QfQ-5n-9kb">
                                 <rect key="frame" x="60" y="120" width="200" height="200"/>
                             </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" offImage="jag" translatesAutoresizingMaskIntoConstraints="NO" id="R4v-u8-GRB">
+                                <rect key="frame" x="211" y="368" width="51" height="31"/>
+                                <connections>
+                                    <action selector="bildSwitchChanged:" destination="Kyi-AW-biD" eventType="valueChanged" id="eMx-xr-kJp"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Party mode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hce-NY-zKL">
+                                <rect key="frame" x="60" y="373" width="89" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="bild" destination="QfQ-5n-9kb" id="Su0-EA-zs0"/>
+                        <outlet property="bildSwitch" destination="R4v-u8-GRB" id="tFW-k4-Pds"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPA-6K-z9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

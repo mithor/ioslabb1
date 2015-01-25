@@ -14,6 +14,7 @@
 		4410ECB01A753D6400E41B4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4410ECAF1A753D6400E41B4B /* Images.xcassets */; };
 		4410ECB31A753D6400E41B4B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4410ECB11A753D6400E41B4B /* LaunchScreen.xib */; };
 		4410ECBF1A753D6400E41B4B /* labb1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4410ECBE1A753D6400E41B4B /* labb1Tests.m */; };
+		4410ECCA1A75B30D00E41B4B /* BildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4410ECC91A75B30D00E41B4B /* BildViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		4410ECB81A753D6400E41B4B /* labb1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = labb1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4410ECBD1A753D6400E41B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4410ECBE1A753D6400E41B4B /* labb1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = labb1Tests.m; sourceTree = "<group>"; };
+		4410ECC81A75B30D00E41B4B /* BildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BildViewController.h; sourceTree = "<group>"; };
+		4410ECC91A75B30D00E41B4B /* BildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BildViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				4410ECA91A753D6400E41B4B /* ViewController.h */,
 				4410ECAA1A753D6400E41B4B /* ViewController.m */,
 				4410ECAC1A753D6400E41B4B /* Main.storyboard */,
+				4410ECC81A75B30D00E41B4B /* BildViewController.h */,
+				4410ECC91A75B30D00E41B4B /* BildViewController.m */,
 				4410ECAF1A753D6400E41B4B /* Images.xcassets */,
 				4410ECB11A753D6400E41B4B /* LaunchScreen.xib */,
 				4410ECA21A753D6400E41B4B /* Supporting Files */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4410ECAB1A753D6400E41B4B /* ViewController.m in Sources */,
+				4410ECCA1A75B30D00E41B4B /* BildViewController.m in Sources */,
 				4410ECA81A753D6400E41B4B /* AppDelegate.m in Sources */,
 				4410ECA51A753D6400E41B4B /* main.m in Sources */,
 			);
